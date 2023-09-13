@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/download.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+  </head>
+
+  <body>
+    
+    <!-- model (pop up) -->
+    <div class="model" id="model">
+      <div class="container">
+        <h1 class="warning">Warning</h1>
+        <hr />
+        <p>You Cannot Create An Empty To Do ,please enter yur to do !</p>
+        <hr />
+        <div><button class="ok" onclick="model()">OK</button></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="head">
+        <div></div>
+        <h2>مهامى</h2>
+        <div class="head2">
+          <i id="add" class="fa-solid fa-plus"></i>
+          <input id="inbtn" type="text" placeholder="Enter item" />
+          <input type="submit" id="load" value="add" />
+        </div>
+      </div>
+      <div class="body" id="body">
+      
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

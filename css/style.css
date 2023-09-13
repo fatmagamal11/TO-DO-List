@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #1c0045;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace, "Franklin Gothic Medium",
+    "Arial Narrow", Arial, sans-serif;
+  /* #532d92 مهامى ========= */
+  /* #eeedef كونتينر =========*/
+  /* #fff تاسك =========*/
+  /* #1d1b1d الكلام بتاع التاسك */
+  /* #680003 حوالين الزباله */
+  /* #048a1e حوالين صح */
+  /* #95fd97 حوالين الغلط */
+  /* #5159d5 حوالين التعديل */
+  /* #95fd97 لون التشيك */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #3c048591;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 30px;
+  height: 200px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #8d7aeb;
+}
+
+.container {
+  height: fit-content;
+  border-radius: 10px;
+  margin: 100px auto;
+  width: 70%;
+  background-color: #eeedef;
+}
+
+.container .head {
+  justify-content: space-between;
+  height: 50px;
+  background-color: #532d92;
+  display: flex;
+  align-items: center;
+  border-radius: 9px 9px 0 0;
+}
+
+.container .head .head2 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .head h2 {
+  font-size: 40px;
+  color: #eeedef;
+}
+
+.container .head .head2 .fa-plus {
+  display: inline-block;
+  background-color: white;
+  font-size: 25px;
+  color: #7456ec;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.container .head .head2 input {
+  border-radius: 5px;
+  padding: 2px 20px;
+  margin: 5px;
+  height: 50%;
+  display: none;
+}
+
+.container .body {
+  padding: 15px;
+  display: block;
+}
+
+.container .body .first {
+  height: fit-content;
+  width: 100%;
+  margin: 7px auto;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 11px 6px rgba(0, 0, 0, 0.05);
+}
+
+.container .body .complete {
+  background-color: #95fd97;
+}
+
+.container .body .first .icons-div {
+  color: #568e61;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .body .first .icons-div i {
+  font-size: 15px;
+  color: #ede4eb;
+  padding: 7px;
+  margin: 15px;
+  border-radius: 50%;
+}
+
+.icons-div .fa-check {
+  display: inline-block;
+  background-color: #018a24;
+}
+
+.icons-div .fa-xmark {
+  display: none;
+  background-color: #6b0159;
+}
+
+.icons-div .fa-trash {
+  background-color: #6b0159;
+}
+
+.icons-div .fa-pen {
+  background-color: #4f5bcf;
+}
+
+.container .body .first .icons-div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .body .first .task {
+  height: 100%;
+  width: 60%;
+  padding: 5px 20px;
+  display: flex;
+  align-items: flex-end;
+  color: #1d1b1d;
+  font-size: 20px;
+  font-weight: 600;
+  flex-direction: column;
+}
+.container .body .first .task .calender{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .body .first .task .fa-calendar-days {
+  font-size: 15px;
+  /* border: solid; */
+  color: #0a5778;
+  padding: 5px 7px 0px;
+  margin: 0px;
+  border-radius: 50%;
+}
+
+.container .body .first .task h5 {
+font-size: 10px;
+font-weight: 100px;
+color: rgb(116, 114, 114);
+padding-top: 5px;
+}
+
+/* model style */
+.model {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.475);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+}
+
+.model .container {
+  width: 450px;
+  height: 230px;
+  background-color: #463e6b;
+  border-radius: 20px;
+}
+
+.model .container h1 {
+  color: rgba(255, 0, 0, 0.523);
+  padding: 20px 15px 5px;
+}
+
+.model .container hr {
+  border: 2px solid #5b49b3a0;
+  border-radius: 5px;
+}
+
+.model .container p {
+  color: #120255;
+  padding: 30px;
+}
+
+.model .container button {
+  padding: 5px;
+  margin: 10px 370px;
+  font-size: 15px;
+  font-weight: 700;
+  width: 50px;
+  height: 40px;
+  background-color: #614ec2;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 460px) {
+  .container .body .first {
+    height: fit-content;
+    flex-direction: column;
+  }
+  .container{
+    width: 95%;
+  }
+  .container .head {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .container .head input {
+    width: 100%;
+  }
+}
